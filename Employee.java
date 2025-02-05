@@ -1,4 +1,4 @@
-import java.util.Scanner;       //experiment 6
+import java.util.Scanner;       
 
 class employeeDetails {
     int empNo;
