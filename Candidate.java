@@ -5,7 +5,6 @@ class candidateDetails {
     String name, remarks;
     float score;
 
-
     void enterData(){
         Scanner S = new Scanner(System.in);
         System.out.print("Enter Roll No.: ");
@@ -30,7 +29,6 @@ class candidateDetails {
             remarks = "Not Selected";
         }
     }
-    
 
     void displayData()  {
         System.out.println("<<< CANDIDATE DETAILS >>>");
@@ -40,8 +38,6 @@ class candidateDetails {
         System.out.println("Remarks: " + remarks);
     }
 }
-
-
 
 class Candidate {
     public static void main(String args[]) {
