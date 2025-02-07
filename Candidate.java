@@ -5,7 +5,7 @@ class candidateDetails {
     String name, remarks;
     float score;
 
-    void enterData(){
+    void enterData() {
         Scanner S = new Scanner(System.in);
         System.out.print("Enter Roll No.: ");
         rollNo = S.nextInt();
@@ -16,12 +16,12 @@ class candidateDetails {
         System.out.print("Enter Score: ");
         score = S.nextFloat();
 
-        System.out.println("");
+        System.out.println();
 
         assignRem();
     }
 
-    void assignRem(){
+    void assignRem() {
         if(score >= 50) {
             remarks = "Selected";       
         }
@@ -30,7 +30,7 @@ class candidateDetails {
         }
     }
 
-    void displayData()  {
+    void displayData() {
         System.out.println("<<< CANDIDATE DETAILS >>>");
         System.out.println("Roll No.: " + rollNo);
         System.out.println("Name: " + name);
