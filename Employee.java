@@ -10,7 +10,7 @@ class employeeDetails {
         System.out.print("Enter Employee Number: ");
         empNo = sc.nextInt();
     
-        System.out.print("Enter Name: ");
+        System.out.print("Enter Name: "); 
         empName = sc.next();
 
         System.out.print("Enter Salary: ");
@@ -32,21 +32,31 @@ class employeeDetails {
     }
 
     void displayData() {
-        System.out.println("<<< EMPLOYEE DETAILS >>>");
         System.out.println("Employee Number: " + empNo);
         System.out.println("Employee Name: " + empName);
         System.out.println("Employee Salary: " + salary);
         System.out.println("Employee House Rent Allowance: " + hra);
         System.out.println("Employee Dearness Allowance: " + da);
-        System.out.println("Employee Net Pay: " + netPay);
+        System.out.println("Employee Net Pay: " + netPay + "\n");
     }
 }
 
 class Employee {
     public static void main(String args[]) {
+
         employeeDetails obj = new employeeDetails();
+        employeeDetails obj1 = new employeeDetails();
+        employeeDetails obj2 = new employeeDetails();
+
         obj.haveData();
+        obj1.haveData();
+        obj2.haveData();
+       
+        System.out.println("<<< EMPLOYEE DETAILS >>>");
+
         obj.displayData();
+        obj1.displayData();
+        obj2.displayData();
     }
 }
 
